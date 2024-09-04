@@ -8,7 +8,6 @@ Vue.js uygulamanızın ana bileşenidir. Bu bileşen, uygulamanın genel yapıs�
 uygulamanın ana işlevselliğini yöneten bileşendir. Bu bileşen, yapılacak işlerin (to-do) listesini görüntüler ve kullanıcıların yeni işler eklemesine, mevcut işleri tamamlamasına veya silmesine olanak tanır. Ayrıca, listeyi filtreleyerek sadece tamamlanmış, aktif veya tüm işleri gösterebilir.
 ### TodoItem.vue:
 tek bir to-do öğesini temsil eden bileşendir. Her bir yapılacak iş için bir TodoItem bileşeni oluşturulur. Bu bileşen, bir görevin tamamlanıp tamamlanmadığını kontrol eder ve kullanıcıya işaretleme veya silme gibi eylemler sunar. Ayrıca, görev tamamlandığında üstü çizili olarak gösterir.
---
 ## Project setup
 ```
 npm install
