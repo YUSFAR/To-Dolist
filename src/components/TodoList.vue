@@ -4,6 +4,32 @@
       <input v-model="newTodo" class="form-control" placeholder="Yeni yapılacak iş" />
       <button type="submit" class="btn btn-primary">Ekle</button>
     </form>
+
+    <!-- Filtre Butonları -->
+    <div class="btn-group mb-3" role="group">
+      <button
+        class="btn"
+        :class="filter === 'all' ? 'btn-secondary' : 'btn-outline-secondary'"
+        @click="filter = 'all'"
+      >
+        Tümü
+      </button>
+      <button
+        class="btn"
+        :class="filter === 'active' ? 'btn-secondary' : 'btn-outline-secondary'"
+        @click="filter = 'active'"
+      >
+        Aktif
+      </button>
+      <button
+        classclass="btn"
+        :class="filter === 'completed' ? 'btn-secondary' : 'btn-outline-secondary'"
+        @click="filter = 'completed'"
+      >
+        Tamamlanmış
+      </button>
+    </div>
+
     <ul class="list-group">
       <TodoItem
         v-for="todo in filteredTodos"
@@ -32,7 +58,7 @@ export default {
         { id: 1, text: 'Vue.js öğren', done: false },
         { id: 2, text: 'Projeyi tamamla', done: true }
       ],
-      filter: 'all'
+      filter: 'all' // 'all', 'active', 'completed' filtrelerini yönetir
     };
   },
   computed: {
@@ -82,5 +108,9 @@ export default {
 .todo-list {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.btn-group .btn {
+  min-width: 100px;
 }
 </style>

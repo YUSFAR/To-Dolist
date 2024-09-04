@@ -1,5 +1,5 @@
 # to-dolist
-
+Basit bir vue.js ve bootsrap kullanan To-Do list projesi 
 ## Project setup
 ```
 npm install
