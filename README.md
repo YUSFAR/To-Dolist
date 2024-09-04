@@ -1,5 +1,8 @@
 # to-dolist
 Basit bir vue.js ve bootsrap kullanan To-Do list projesi 
+## Projede kullanılan bileşenler
+------------
+### Tıdılist.vue: 
 ## Project setup
 ```
 npm install
@@ -14,6 +17,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
