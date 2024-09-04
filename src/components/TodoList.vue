@@ -5,7 +5,6 @@
       <button type="submit" class="btn btn-primary">Ekle</button>
     </form>
 
-    <!-- Filtre Butonları -->
     <div class="btn-group mb-3" role="group">
       <button
         class="btn"
@@ -58,7 +57,7 @@ export default {
         { id: 1, text: 'Vue.js öğren', done: false },
         { id: 2, text: 'Projeyi tamamla', done: true }
       ],
-      filter: 'all' // 'all', 'active', 'completed' filtrelerini yönetir
+      filter: 'all' 
     };
   },
   computed: {
